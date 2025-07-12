@@ -115,6 +115,7 @@ h1 {
 
 .container {
   margin-top: 16px;
+  margin-right: 32px;
 }
 
 @media screen and (max-height: 450px) {
