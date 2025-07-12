@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Appointments</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Schedule</h1>
+        <!-- Overlay Navigation -->
+        <span class="open-btn" onclick="openNav()">☰ Menu</span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+            <nav>
+                <a class="active" href="home.html">Home</a>
+                <a href="appointments.html">Appointment</a>
+                <a href="medication.html">Medication</a>
+                <a href="profile.html">Profile</a>
+                <a href="scheduler.html">Schedule</a>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div id="card-list" class="card-list">
+                <form>
+                    <label for="prompt">How can I help schedule</label><br>
+                    <input type="text" id="prompt" name="prompt"><br>
+                </form>
+                <button type="button">Book!</button>
+            </div>
+        </div>
+        <script src="scheduler.js"></script>
+    </body>
+</html>
