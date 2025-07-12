@@ -40,6 +40,7 @@ I'll give you a medical transcript, please response with json format that has th
        b.2. time
    c. reason: reason for doing this
 I want the language to be for a layperson patient with no prior knowledge of medicine, not a clinical / doctor
+Don't miss or skip, any single information, specifically under takeaways section
 
 ```
 {content}
@@ -50,7 +51,7 @@ I want the language to be for a layperson patient with no prior knowledge of med
 class Summarizer:
     def __init__(self):
         self._client = genai.Client()
-        self._model = "gemini-2.5-flash"
+        self._model = "gemini-2.5-pro"
 
     def summarize(self, content: int):
         data = PROMPT.format(content=content)
