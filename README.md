@@ -1,1 +1,1 @@
-# heirdi-hackathon
+# heidi-hackathon
