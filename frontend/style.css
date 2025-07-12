@@ -15,26 +15,8 @@ ul {
   padding: 0;
   width: 25%;
   background-color: #f1f1f1;
-  position: fixed;
   height: 100%;
   overflow: auto;
-}
-
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-li a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
 }
 
 .smartphone {
@@ -81,4 +63,56 @@ li a:hover:not(.active) {
   width: 360px;
   height: 640px;
   background: white;
+}
+
+/* Button to open the nav */
+.open-btn {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* The overlay */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.95);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/* Overlay content */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay-content a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay-content a:hover {
+  color: #f1f1f1;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: white;
+  text-decoration: none;
 }
