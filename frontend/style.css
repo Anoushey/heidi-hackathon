@@ -116,3 +116,25 @@ ul {
   color: white;
   text-decoration: none;
 }
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+}
+
+.card p {
+  margin-top: 8px;
+}
