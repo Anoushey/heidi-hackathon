@@ -7,7 +7,7 @@ I'll give you a medical transcript, please response with json format that has th
 1. appointments
    a. who (text)
    b. why (text)
-2. diagnosis (list(text))
+2. diagnosis (text)
 3. precautions (list(text))
    a. precaution (text)
    b. reason (text)
@@ -16,7 +16,7 @@ I'll give you a medical transcript, please response with json format that has th
    b. reason (text)
    c. frequency (text)
 5. things_to_do (list(dict))
-   a. what to do
+   a. what
    b. period
    b. reason
    
@@ -25,7 +25,7 @@ I'll give you a medical transcript, please response with json format that has th
    a. who: with whom will the next appointment be held
    b. why: why the patient needs to have the next appointment
    c. when: what date and time is the next appointment
-2. diagnosis: explain it to patient within layperson terms without the usage of medical terminology
+2. diagnosis: explain it to patient within layperson terms without the usage of medical terminology, and make it consise with less than 20 words
 3. precautions: what are the precautions that need to be taken by the patient.
    a. what: what is the precaution to be taken. Explain in layperson terms
    b. why: Explain why you should take this precaution in layperson terms
@@ -34,11 +34,11 @@ I'll give you a medical transcript, please response with json format that has th
    b. reason: why is the medication to be taken
    c. frequency: how often should the medication be taken by the patient
 5. things_to_do: what are the things the patient need to do (for example walking exercise in the morning)
-   a. what: what's the things needed to do
+   a. what: what's the things needed to do, make it simple, less than 5 words
    b. period: daily, weekly, monthly in this format
        b.1. daily, weekly, month
        b.2. time
-   c. reason: reason for doing this
+   c. reason: reason for doing this, make it simple, less than 15 words
 I want the language to be for a layperson patient with no prior knowledge of medicine, not a clinical / doctor
 Don't miss or skip, any single information, specifically under takeaways section
 

@@ -8,42 +8,42 @@
 </head>
 <body>
     <h1 class="page-title">Your Profile</h1>
-
-    <div class="smartphone">
         <div class="content">
 
-            <!-- Uncomment if needed -->
-            <!-- <div class="menu-section">
-                <iframe src="home.html"></iframe>
-            </div> -->
-
+            <span class="open-btn" onclick="openNav()">☰ Menu</span>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+                <nav>
+                    <a class="active" href="home.html">Home</a>
+                    <a href="appointments.html">Appointment</a>
+                    <a href="medication.html">Medication</a>
+                    <a href="profile.html">Profile</a>
+                </nav>
+            </div>
             <!-- Patient Details Section -->
             <div class="section-box">
                 <h2>Patient Details</h2>
                 <p><strong>Name:</strong> Michael Doe</p>
                 <p><strong>Age:</strong> 39</p>
-                <p><strong>ID:</strong> P123456</p>
             </div>
 
             <!-- Diagnosis Section -->
             <div class="section-box">
                 <h2>Diagnosis</h2>
-                <p><strong>Condition:</strong> Mild hypertension</p>
+                <div id="diagnosis"></div>
+                <!-- <p><strong>Condition:</strong> Mild hypertension</p> -->
             </div>
 
             <!-- Precautions Section -->
             <div class="section-box">
                 <h2>Next steps</h2>
-                <p><strong>What to do:</strong>things_to_do.what to do</p>
-				<p><strong>When:</strong>things_to_do.period</p>
-				<p><strong>Reason:</strong>things_to_do.reason</p>
+                <div class="container">
+                    <div id="card-list" class="card-list">
+
+                </div>
+                </div>
             </div>
-
-        </div>
     </div>
-
-    <div class="home-link">
-        <a href="home.html">Home</a>
-    </div>
+        <script src="profile.js"></script>
 </body>
 </html>
