@@ -12,10 +12,9 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
             <nav>
-                <a class="active" href="home.html">Home</a>
+                <a class="active" href="profile.html">Home</a>
                 <a href="appointments.html">Appointment</a>
                 <a href="medication.html">Medication</a>
-                <a href="profile.html">Profile</a>
                 <a href="scheduler.html">Schedule</a>
             </nav>
         </div>
@@ -24,11 +23,10 @@
             <div id="card-list" class="card-list">
                 <form>
                     <label for="prompt">How can I help schedule</label><br>
-                    <textarea type="text" id="prompt" name="prompt" style="width: 100%; height: 50px;"></textarea>
+                    <input type="text" id="prompt" name="prompt"><br>
                 </form>
-                <button id="book-btn" type="button">Book!</button>
+                <button type="button">Book!</button>
             </div>
-            <p id="response-link" style="margin-top: 1em;"></p>
         </div>
         <script src="scheduler.js"></script>
     </body>
