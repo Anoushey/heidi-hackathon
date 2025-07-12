@@ -6,17 +6,8 @@ body {
 }
 
 h1 {
+  padding: 5px;
   color: #007bff;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  background-color: #f1f1f1;
-  height: 100%;
-  overflow: auto;
 }
 
 .smartphone {
@@ -65,54 +56,44 @@ ul {
   background: white;
 }
 
-/* Button to open the nav */
-.open-btn {
-  font-size: 30px;
-  cursor: pointer;
-  padding: 10px;
-  display: inline-block;
-}
-
-/* The overlay */
-.overlay {
+.sidenav {
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.95);
+  background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
+  padding-top: 60px;
 }
 
-/* Overlay content */
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-}
-
-.overlay-content a {
-  padding: 10px;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 36px;
-  color: white;
+  font-size: 25px;
+  color: #818181;
   display: block;
   transition: 0.3s;
 }
 
-.overlay-content a:hover {
+.sidenav a:hover {
   color: #f1f1f1;
 }
 
-/* Close button */
-.close-btn {
+.sidenav .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  color: white;
-  text-decoration: none;
+  width: 700px;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
