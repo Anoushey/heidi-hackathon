@@ -25,7 +25,7 @@ fetch("http://localhost:8000/summarize", {
         div.innerHTML = `
             <h3>${appointment.who}</h3>
             <p>${appointment.why}</p>
-            <p>${appointment.when}</p>
+            <b>Tuesday, 15 July 2025</b>
         `;
         document.getElementById("card-list").appendChild(div);
     })
