@@ -1,7 +1,7 @@
 function openNav() {
-  document.getElementById("popupNav").style.width = "100%";
+  document.getElementById("mySidenav").style.width = "750px";
 }
 
 function closeNav() {
-  document.getElementById("popupNav").style.width = "0%";
+  document.getElementById("mySidenav").style.width = "0";
 }
